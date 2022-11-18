@@ -1,0 +1,32 @@
+.text_ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.textarea_ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.inline_vertical_middle() {
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 0;
+  }
+}
+
+.full_scale() {
+  width: 100%;
+  height: 100%;
+}
+
+.transition(@property: all; @duration: 0.5s; @function: ease; @delay: 0s) {
+  transition: @property @duration @function @delay;
+}

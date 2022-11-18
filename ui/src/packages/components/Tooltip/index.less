@@ -1,0 +1,27 @@
+@import '~@/assets/less/variables.less';
+@import '~@/assets/less/mixins.less';
+
+.el-tooltip__popper {
+  max-width: 70%;
+
+  &.is-light {
+    border-color: @popper-border-color;
+    .box-shadow(0 2px 12px 0 rgba(0, 0, 0, .1));
+
+    &[x-placement^=top] .popper__arrow {
+      border-top-color: @popper-border-color;
+    }
+
+    &[x-placement^=bottom] .popper__arrow {
+      border-bottom-color: @popper-border-color;
+    }
+
+    &[x-placement^=left] .popper__arrow {
+      border-left-color: @popper-border-color;
+    }
+
+    &[x-placement^=right] .popper__arrow {
+      border-right-color: @popper-border-color;
+    }
+  }
+}

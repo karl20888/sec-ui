@@ -1,0 +1,61 @@
+@import '~@/assets/less/variables.less';
+@import '~@/assets/less/mixins.less';
+
+.sec-block {
+  background-color: #fff;
+
+  + .sec-block {
+    margin-bottom: 10px;
+  }
+}
+
+.sec-block-full {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+
+  > .sec-block-content {
+    padding: 0;
+  }
+}
+
+.sec-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #d7dae2;
+
+  &-card {
+    position: relative;
+    background-color: #fafafa;
+    border-bottom: 0 none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      background-color: @brand-primary;
+    }
+  }
+}
+
+.sec-block-title {
+  font-size: 14px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.sec-block-content {
+  padding: 10px 15px;
+  flex: 1;
+  overflow: auto;
+  .scrollbar(#fff);
+}

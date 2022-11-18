@@ -1,0 +1,36 @@
+@import '~@/assets/less/variables.less';
+@import '~@/assets/less/mixins.less';
+
+.sec-collapse {
+  border: 0 none;
+
+  .el-collapse-item__header {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    background-color: #fafafa;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: -1px;
+      content: '';
+      width: 3px;
+      height: calc(100% + 2px);
+      background-color: @brand-primary;
+    }
+  }
+
+  .el-collapse-item__wrap {
+    padding: 0 20px;
+  }
+
+  .el-collapse-item__content {
+    padding: 20px 0;
+  }
+}
+

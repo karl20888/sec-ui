@@ -1,0 +1,278 @@
+@import '~@/assets/less/variables.less';
+@import '~@/assets/less/mixins.less';
+@import '~@/assets/less/common.less';
+
+.sec-table {
+  width: 100%;
+
+  .cell {
+    line-height: 30px;
+  }
+
+  th.el-table__cell {
+    background-color: #f7f7f7;
+
+    .cell {
+      font-size: 13px;
+      color: rgba(0, 0, 0, .85);
+    }
+  }
+
+  td.el-table__cell > .cell.el-tooltip > * {
+    max-width: 100%;
+    .text_ellipsis();
+  }
+
+  .el-table__fixed-right-patch {
+    background-color: #f7f7f7;
+  }
+
+  &.el-table--small {
+    font-size: 14px;
+
+    .el-table__cell {
+      padding: 5px 0;
+    }
+  }
+
+  &.el-table--mini .el-table__cell {
+    padding: 4px 0;
+  }
+}
+
+.sec-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.sec-table-extra {
+  display: flex;
+  align-items: center;
+}
+
+.sec-table-wrap {
+  .sec-table-header {
+    border-bottom: 1px solid #efefef;
+  }
+
+  .sec-table-filter-form {
+    .sec-form-item {
+      border: 1px solid #dcdfe6;
+      border-radius: 4px;
+      margin-bottom: 0;
+      height: 32px;
+
+      .el-form-item__content {
+        line-height: 30px;
+      }
+
+      .el-form-item__label {
+        padding-left: 5px;
+        padding-right: 5px;
+        line-height: 30px;
+        color: #c0c4cc;
+      }
+
+      .el-input__inner {
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none;
+        background: none;
+        height: 30px;
+        line-height: 30px;
+      }
+
+      .el-input--prefix .el-input__inner {
+        padding-left: 30px;
+      }
+
+      .el-input--suffix .el-input__inner {
+        padding-right: 30px;
+      }
+
+      .el-textarea__inner {
+        border: none;
+      }
+    }
+  }
+
+  .sec-table-main {
+    padding: 10px;
+  }
+
+  .sec-table-filter-result {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+
+    > i {
+      font-size: 12px;
+      color: @brand-primary;
+    }
+
+    > .sec-btn {
+      margin-left: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .sec-table-filter-tag {
+    margin-left: 20px;
+    font-size: 12px;
+    word-break: break-all;
+
+    &.is-active {
+      color: @brand-primary;
+    }
+  }
+}
+
+.sec-table-state {
+  font-size: 12px;
+
+  strong {
+    color: @brand-primary;
+  }
+}
+
+.sec-table-control {
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sec-table-pager {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sec-table-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+
+  .sec-table-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .sec-table-row {
+    overflow-y: auto;
+    .scrollbar();
+  }
+
+  .sec-table-inner {
+    flex: 1;
+    overflow: hidden;
+  }
+}
+
+.sec-table-selection-label > .el-checkbox {
+  display: none;
+}
+
+.sec-table-inner {
+  position: relative;
+}
+
+.sec-table-selection-popover {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 46px;
+  height: 46px;
+  z-index: 100;
+}
+
+.sec-table-selection-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.sec-table-selection-wrap {
+  padding-left: 10px;
+
+  p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    strong {
+      font-weight: normal;
+      color: @brand-primary;
+    }
+  }
+}
+
+.sec-table-columns-popover {
+  padding: 0;
+}
+
+.sec-table-cols {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.sec-table-cols-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sec-table-cols-btns {
+  display: flex;
+  border-bottom: 1px solid #fafafa;
+
+  .sec-table-cols-btn {
+    flex: 1;
+    height: 40px;
+
+    &.is-not-all {
+      background-color: #fafafa;
+    }
+
+    &.is-active {
+      background-color: #fef3e6;
+      color: @brand-primary;
+    }
+  }
+}
+
+.sec-table-cols-list {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  .scrollbar();
+
+  .sec-table-cols-btn {
+    height: 36px;
+    padding-left: 25px;
+    justify-content: left;
+    
+    &.is-active {
+      color: @brand-primary;
+    }
+
+    &.is-disabled {
+      cursor: not-allowed;
+    }
+
+    &:not(.is-disabled):hover {
+      background-color: #fef3e6;
+    }
+  }
+}

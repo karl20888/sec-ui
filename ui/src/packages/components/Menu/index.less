@@ -1,0 +1,64 @@
+@import '~@/assets/less/variables.less';
+@import '~@/assets/less/mixins.less';
+
+.sec-menu.el-menu--horizontal > .sec-submenu {
+  float: left;
+
+  > .el-submenu {
+
+    &:focus,
+    &:hover {
+      outline: none;
+
+      .el-submenu__title {
+        color: @text-color;
+      }
+    }
+
+    &.is-active {
+      .el-submenu__title {
+        border-bottom: 2px solid @brand-primary;
+        color: @text-color;
+      }
+    }
+
+    & .el-submenu__title {
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid transparent;
+      color: #909399;
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+
+    & .el-submenu__icon-arrow {
+      position: static;
+      vertical-align: middle;
+      margin-left: 8px;
+      margin-top: -3px;
+    }
+  }
+}
+
+.sec-menu.el-menu--collapse > .sec-submenu > .el-submenu > .el-submenu__title {
+  [class^="el-icon-"] {
+    margin: 0;
+    vertical-align: middle;
+    width: 24px;
+    text-align: center;
+  }
+
+  .el-submenu__icon-array {
+    display: none;
+  }
+
+  span {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,54 @@
+@import '~@/assets/less/variables.less';
+@import '~@/assets/less/mixins.less';
+
+.sec-drawer {
+  .el-drawer__header {
+    margin-bottom: 0;
+    padding: 5px 5px 5px 15px;
+    border-bottom: 1px solid #e8e8e8;
+
+    .sec-drawer-title,
+    > span[role="heading"] {
+      color: rgba(0, 0, 0, .65);
+      font-size: 16px;
+    }
+  }
+
+  .el-drawer__close-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: #f7f7f7;
+    }
+  }
+}
+
+.sec-drawer-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sec-drawer-scrollbar {
+  flex: 1;
+
+  > .el-scrollbar__wrap {
+    overflow-x: hidden;
+  }
+}
+
+.sec-drawer-content.is-full {
+  flex: 1;
+  overflow: hidden;
+}
+
+.sec-drawer-footer {
+  text-align: right;
+  padding: 10px 30px;
+  border-top: 1px solid #f1f1f1;
+  .box-shadow(2px -5px 13px #c8c8c8);
+}

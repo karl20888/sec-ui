@@ -1,0 +1,38 @@
+@import '~@/assets/less/variables.less';
+@import '~@/assets/less/mixins.less';
+
+.sec-tag-state {
+  position: relative;
+  padding-left: 10px;
+  background: none !important;
+  border: none !important;
+  color: @text-color !important;
+
+  &.el-tag--success:before {
+    background-color: #67c23a;
+  }
+
+  &.el-tag--info::before {
+    background-color: #909399;
+  }
+
+  &.el-tag--warning::before {
+    background-color: #e6a23c;
+  }
+
+  &.el-tag--danger::before {
+    background-color: #f56c6c;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: @brand-primary;
+    border-radius: 50%;
+    margin-top: -2px;
+  }
+}

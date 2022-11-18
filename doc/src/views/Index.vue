@@ -1,0 +1,9 @@
+<template>
+  <sec-layout
+    aside-width="320px"
+    :router="$router"
+    :route="$route"
+  >
+    <router-view></router-view>
+  </sec-layout>
+</template>

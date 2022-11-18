@@ -1,0 +1,32 @@
+@import '~@/assets/less/variables.less';
+@import '~@/assets/less/mixins.less';
+
+.sec-more {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sec-more-content {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.sec-more-full {
+  flex-grow: 1;
+}
+
+.sec-more-extra {
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sec-more-icon {
+  display: block;
+  width: 30px;
+  text-align: center;
+  color: @brand-primary;
+}

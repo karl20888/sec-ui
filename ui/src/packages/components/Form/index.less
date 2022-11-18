@@ -1,0 +1,23 @@
+.sec-form-item-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  > .sec-form-item-content {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  > .sec-form-item-extra {
+    padding-left: 10px;
+
+    &.sec-form-item-align {
+      padding-left: 0;
+    }
+  }
+}
+
+.sec-form-item.is-error .sec-valid-success .el-input__inner,
+.sec-form-item.is-error .sec-valid-success .el-input__inner:focus {
+  border-color: #dcdfe6;
+}

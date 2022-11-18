@@ -1,0 +1,130 @@
+@import '~@/assets/less/variables.less';
+@import '~@/assets/less/mixins.less';
+
+.sec-where-inner,
+.sec-where-control {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sec-where-control {
+  min-width: 60px;
+  text-align: right;
+
+  .sec-where-btn {
+    border: none;
+    background: none;
+    font-size: 16px;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #999;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+.sec-where-remove {
+  &:hover,
+  &:focus {
+    color: #F56C6C;
+  }
+}
+
+.sec-where-add {
+  &:hover,
+  &:focus {
+    color: @brand-primary;
+  }
+}
+
+.sec-where-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .sec-radio-group .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+    background-color: #fef3e6;
+    color: @brand-primary;
+  }
+}
+
+.sec-where-group-content {
+  position: relative;
+  padding: 10px 0 10px 20px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 10px;
+    top: 0;
+    width: 2px;
+    height: 10px;
+    background-color: #ddd;
+  }
+
+  &.is-empty:before {
+    display: none;
+  }
+}
+
+.sec-where-group-item {
+  position: relative;
+
+  .sec-where-item {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .sec-form.el-form--inline .sec-form-item {
+    margin-bottom: 0;
+  }
+
+  .sec-where-group {
+    border: 1px solid #eee;
+    padding: 10px;
+  }
+
+  &.is-group + &.is-group {
+    padding-top: 10px;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+  }
+
+  &:last-child:before {
+    height: 50%;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: 50%;
+    width: 10px;
+    height: 2px;
+    background-color: #ddd;
+  }
+}
+
+.sec-where-group-tail {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sec-form-item-content > .sec-where-group {
+  padding: 10px;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+}
