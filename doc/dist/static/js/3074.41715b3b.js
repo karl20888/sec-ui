@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkdoc"]=self["webpackChunkdoc"]||[]).push([[3074],{3074:function(t,u,e){e.r(u),e.d(u,{default:function(){return c}});var r=function(){var t=this,u=t._self._c;return u("sec-layout",{attrs:{"aside-width":"320px",router:t.$router,route:t.$route}},[u("router-view")],1)},n=[],o=e(4940),l={},s=(0,o.Z)(l,r,n,!1,null,null,null),c=s.exports}}]);
+//# sourceMappingURL=3074.41715b3b.js.map
