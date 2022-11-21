@@ -51,7 +51,7 @@
     <p>单独引入 <code>Message</code>：</p>
     <markdown-it-vue
       content="```
-      import { Message } from sec-ui';
+      import { Message } from @dbsec/ui';
       "
     ></markdown-it-vue>
     <p>此时调用方法 <code>Message(options)</code>。我们也可以每个 type 定义了各自的方法，如 <code>Message.success(options)。并且可以调用 <code>Message.closeAll()</code> 手动关闭所有实例。</code></p>

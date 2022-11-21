@@ -1,5 +1,5 @@
 {
-  "name": "sec-ui",
+  "name": "@dbsec/ui",
   "version": "0.7.5",
   "private": false,
   "main": "dist/sec-ui.umd.min.js",

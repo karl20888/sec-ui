@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url" : "git@github.com:karl20888/sec-ui.git"
+    "url" : "http://10.10.160.12:8088/karl20888/sec-ui.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/karl20888/sec-ui/issues"
+    "url": "http://10.10.160.12:8088/karl20888/sec-ui/issues"
   },
   "dependencies": {
     "axios": "^0.27.2",
