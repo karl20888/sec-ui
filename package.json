@@ -1,7 +1,6 @@
 {
   "name": "ui",
   "version": "0.7.5",
-  "description": "基于 Element UI 封装的一套适用于快速搭建后台管理界面的 UI 组件库",
   "private": true,
   "scripts": {
     "ui-dev": "pnpm run -C ui serve",
@@ -9,14 +8,6 @@
     "doc-build": "pnpm run -C doc build",
     "doc-dev": "pnpm run -C doc serve",
     "preinstall": "npx only-allow pnpm -y"
-  },
-  "repository": {
-    "type": "git",
-    "url" : "git@github.com:karl20888/sec-ui.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/karl20888/sec-ui/issues"
   },
   "dependencies": {
     "axios": "^0.27.2",

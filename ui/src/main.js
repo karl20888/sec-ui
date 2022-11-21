@@ -9,7 +9,6 @@ import './assets/iconfont/iconfont.css';
 import './assets/iconfont/iconfont';
 import './assets/less/index.less';
 import './packages/components/index.less';
-import './assets/less/doc.less';
 import DBSecUI from './packages';
 
 Vue.config.productionTip = false;

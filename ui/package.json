@@ -1,18 +1,27 @@
 {
-  "name": "sec-ui",
+  "name": "secui",
   "version": "0.7.5",
+  "description": "基于 Element UI 封装的一套适用于快速搭建后台管理界面的 UI 组件库",
   "private": false,
-  "main": "dist/sec-ui.umd.min.js",
+  "main": "dist/secui.umd.min.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name sec-ui ./src/index.js",
+    "build": "vue-cli-service build --target lib --name secui ./src/index.js",
     "build:doc": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "git@github.com:karl20888/sec-ui.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karl20888/sec-ui/issues"
   },
   "peerDependencies": {
     "axios": "^0.27.2",

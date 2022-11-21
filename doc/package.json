@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@antv/x6": "^1.34.6",
-    "sec-ui": "workspace:^0.7.5",
+    "secui": "workspace:^0.7.5",
     "@highlightjs/vue-plugin": "^1.0.2",
     "highlight.js": "^10.7.3",
     "markdown-it-vue": "^1.1.7"
