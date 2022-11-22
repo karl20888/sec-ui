@@ -80,7 +80,7 @@
     <p>如果单独引入 <code>MessageBox</code>：</p>
     <markdown-it-vue
       content="```
-      import { MessageBox } from 'secui';
+      import { MessageBox } from 'element-sec-ui';
       "
     ></markdown-it-vue>
     <p>那么对应于上述四个全局方法的调用方法依次为：MessageBox, MessageBox.alert，MessageBox.confirm 和 MessageBox.prompt，调用参数与全局方法相同。</p>

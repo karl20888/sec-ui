@@ -1,10 +1,10 @@
 import Vue from 'vue';
-import SecUI from 'secui';
+import SecUI from 'element-sec-ui';
 import MarkdownItVue from 'markdown-it-vue';
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
-import 'secui/dist/secui.css';
+import 'element-sec-ui/dist/sec-ui.css';
 import 'highlight.js/styles/default.css';
 import './assets/less/doc.less';
 

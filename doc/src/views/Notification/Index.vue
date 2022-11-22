@@ -60,7 +60,7 @@
     <p>单独引入 Notification：</p>
     <markdown-it-vue
       content="```
-      import { Notification } from 'secui';
+      import { Notification } from 'element-sec-ui';
       "
     ></markdown-it-vue>
     <p>此时调用方法为 <code>Notification(options)</code>。我们也为每个 type 定义了各自的方法，如 <code>Notification.success(options)</code>。并且可以调用 <code>Notification.closeAll()</code> 手动关闭所有实例。</p>

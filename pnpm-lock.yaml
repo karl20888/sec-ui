@@ -83,16 +83,16 @@ importers:
     specifiers:
       '@antv/x6': ^1.34.6
       '@highlightjs/vue-plugin': ^1.0.2
+      element-sec-ui: workspace:^0.7.5
       highlight.js: ^10.7.3
       markdown-it-vue: ^1.1.7
-      secui: workspace:^0.7.5
       text-loader: ^0.0.1
     dependencies:
       '@antv/x6': 1.34.6
       '@highlightjs/vue-plugin': 1.0.2
+      element-sec-ui: link:../ui
       highlight.js: 10.7.3
       markdown-it-vue: 1.1.7
-      secui: link:../ui
     devDependencies:
       text-loader: 0.0.1
 
