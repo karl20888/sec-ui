@@ -23,7 +23,7 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-const version = '0.7.5';
+const version = '0.7.8';
 
 export const Loading = SecLoading;
 export const Message = SecMessage;

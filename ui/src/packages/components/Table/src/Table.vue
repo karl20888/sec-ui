@@ -124,6 +124,7 @@
           :data="data"
           :row-key="rowKey"
           :height="tableHeight"
+          :stripe="stripe"
           :tooltip-effect="tooltipEffect"
           :toggle-column-show="toggleColumnShow"
           :columns="columns"
@@ -193,6 +194,10 @@ export default {
     rowKey: {
       type: [Function, String],
       default: null,
+    },
+    stripe: {
+      type: Boolean,
+      default: true,
     },
     tooltipEffect: {
       type: String,
